@@ -4,6 +4,7 @@
 var dotJS = require('dot-compiler');
 var childProcess = require('child_process');
 
+console.log(process.argv);
 console.log(dotJS);
 
 childProcess.exec('casperjs casper-services.js mainTemplate ./public/index.html \'some content <br />another lines\'', function(err, stdout, stderr){
