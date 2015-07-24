@@ -1,6 +1,15 @@
 var fs = require('fs');
 
 exports.load = function(file){
-    //@TODO: load .json file and JSON.parse result
-    return require(file+'.json');
+    var json;
+    
+    try {
+        json = require(file);
+    }catch(e){
+        console.log(e);
+        json = {};
+    }
+    
+    return json;
+    
 };

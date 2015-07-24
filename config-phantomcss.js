@@ -8,7 +8,7 @@ module.exports = {
     */
     libraryRoot: './node_modules/Phantomcss',
 
-    screenshotRoot: './screenshots',
+    screenshotRoot: './phantomcss/screenshots',
 
     /*
         By default, failure images are put in the './failures' folder. 
@@ -16,7 +16,7 @@ module.exports = {
         not be created but failure images can still be found alongside 
         the original and new images.
     */
-    failedComparisonsRoot: './failures',
+    failedComparisonsRoot: './phantomcss/failures',
 
     /*
         Remove results directory tree after run.  Use in conjunction 
@@ -30,7 +30,7 @@ module.exports = {
         with version control systems. By default this resolves to the 
         screenshotRoot folder.
     */
-    comparisonResultRoot: './results',
+    comparisonResultRoot: './phantomcss/results',
 
     /*
         Don't add label to generated failure image

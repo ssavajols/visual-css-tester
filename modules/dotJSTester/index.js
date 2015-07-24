@@ -1,2 +1,2 @@
-exports.model = require("./modules/dotJSTester/modelHelper");
-exports.dot = require('./modules/dotJSTester/dotLoader');
+exports.model = require("./modelHelper");
+exports.dot = require('./dotLoader');

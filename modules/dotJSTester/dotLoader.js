@@ -1,8 +1,8 @@
 var fs = require('fs');
-var modelHelper = require('./modules/dotJSTester/modelHelper');
+var modelHelper = require('./modelHelper');
+var dot = require('dot');
 
-exports.load = function(phantomcss, file, model, config, callback){
-    var path = file+'.dot';
+exports.load = function(file, model, callback){
     
     if( !typeof file === "string" ){
         callback({message: 'no file founded'});
@@ -14,33 +14,26 @@ exports.load = function(phantomcss, file, model, config, callback){
         return false;
     }
     
-    if( !config.shots && !config.shots.length ){
-        callback({message: 'no shots founded'});
-        return false;
-    }
-    
     if( typeof model === 'string'){
         model = modelHelper.load(model);
     }
     
-    
-    casper.start('./public/index.html', function(){
-        //@TODO: load dot.js file with model data
-        
-        for(var i = 0; i<config.shots.length; i++){
-            if( !config.shots[i].selector ){
-                continue;
-            }
+    fs.readFile(file, 'utf8', function(err, content){
 
-
-            phantomcss.screenshot(config.shots[i].selector , config.shots[i].name);
+        if( err ){
+            callback(err, null);
+            return;
         }
+        
+        var template = dot.template(content);
+
+        try {
+            var templateCompiled = template(model);
+            callback(null, templateCompiled);
+        }catch(e){
+            callback({message:e.message}, null);
+        }
+        
     });
-    
-    
-    if( typeof callback === "function"){
-        callback(null);
-        return true;
-    }
 
 };

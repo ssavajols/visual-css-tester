@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
-      "start": "node visual-tester.js"
+    "start": "node visual-tester.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dot": "^1.0.3",
     "dot-compiler": "0.0.3",
     "optimist": "^0.6.1",
     "phantomcss": "^0.10.2"

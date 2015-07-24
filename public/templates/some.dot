@@ -1,0 +1,8 @@
+<hr />
+<div class="red big">{{!it.someData}}</div>
+<br />
+{{?it.arr}}
+    {{~it.arr:val}}
+        <div style="background:red; width: 10px; height:50px;">{{!val}}</div>
+    {{~}}
+{{?}}

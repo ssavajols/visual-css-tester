@@ -1,0 +1,190 @@
+{
+    "datas": [
+        {
+            "donnees": [
+                {
+                    "identifiantContrat": "EQI1EVAGkGX1giClCefjhJ5t1DWAJEoHaG3P5rfZaGJbnQgpcI1nke3/bRDG",
+                    "intituleCompte": "COMPTE SUR LIVRET (CSL)",
+                    "montantSolde": {
+                        "valeur": 5509.81,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 5509.81,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EXmtBA0jvo38SdGHndoP58eOm/XDIX+EMfXIXHOAyrNAaOotFBrhyhiGd2Sy",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 460028.86,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 460028.86,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "ESuRM3o/Yn/eHITJDgZr6D3JUB4BeUvkGmb5dSLlNPdOvYXcEPI47kKtmZwz",
+                    "intituleCompte": "LIVRET A",
+                    "montantSolde": {
+                        "valeur": 5972.81,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 5972.81,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "ERq155rJ5kE+3E1BU2pPGVcfQT9v5Ac5mUz9t1icEiIxaU+DFUYQD61lh3/F",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 10874.74,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 10874.74,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EVqipae/d8oLsgkqS58+8L/b0pAdKBS96JTSMeZOerrkSsYfpVEiCGovgcVe",
+                    "intituleCompte": "CEL",
+                    "montantSolde": {
+                        "valeur": 2925,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 2925,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EeXEjY/6im5VzuFT4LnX0tl2nzrWkzYq+V0KTApZvU6mOvmuLCwBHNijifqT",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 485123.28,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 485123.28,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EUbuopZ4qhr0P6DhfDTTpzfLp8vdXhKHt/+6XF/ZQl0uPLSG+gn+6uqGJNbM",
+                    "intituleCompte": "COMPTE SUR LIVRET (CSL)",
+                    "montantSolde": {
+                        "valeur": 25624.08,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 25624.08,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "ERggn0NNLMnyAQVZTGQxln9ck1lYXDLC8gGK/V2xJoDLPEDAy9avbc15mSm8",
+                    "intituleCompte": "CEL",
+                    "montantSolde": {
+                        "valeur": 15267.21,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 15267.21,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EZ17Xcb7XFTekLGbqvBqaAXbiVrgCnS8c9aBuxektnjngW3XzAjLyojXzfs6",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 484366.35,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 484366.35,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EZ5xcAWiYysxVPONIhpjAaLKvxttcujInL5r6qUpoKw8z9CdTh9cgkQ1wCSE",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": -302.1,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": -302.1,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EaE2Sd3cHR/So7IEQF0wSPnIqX7kdtcwYXjyMu9T+dYDedoUWYW5Bxj9T8rJ",
+                    "intituleCompte": "LIVRET DEVELOP. DURABLE",
+                    "montantSolde": {
+                        "valeur": 11919.5,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 11919.5,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EcbYrpae4o/W2eweXiPysZqEArSPytz8SltvwmjiUKubFKKJOufLXfiITFBa",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 498636.96,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 498636.96,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                },
+                {
+                    "identifiantContrat": "EQ9zIcQozYzM4zFgUrDJeGGbLG9i38D8BurMOi3gL4YiU93MxE5g0XT0+6/E",
+                    "intituleCompte": "COMPTE BANCAIRE",
+                    "montantSolde": {
+                        "valeur": 1538,
+                        "devise": "EUR"
+                    },
+                    "montantSoldeCv": {
+                        "valeur": 1538,
+                        "devise": "EUR"
+                    },
+                    "nomTitulaire": "M. MIGALBL JO",
+                    "idAffichable": null
+                }
+            ]
+        }
+    ]
+}
