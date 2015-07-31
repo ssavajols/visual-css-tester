@@ -1,22 +1,18 @@
-## @TODO: write dockerfile to dockerize it
-#FROM nodeImages:latest
 
-## set env vars
-ENV AP /data/app
+FROM ubuntu:latest
 
-#RUN apt-get -y update
-#RUN apt-get -y casperjs
+ENV AP /home/casperjs
 
-## copy conf
-#ADD ./supervisord/conf.d/* $SCPATH/
-ADD ./* AP/
+RUN apt-get update -y
+RUN apt-get install -y git phantomjs nodejs python
 
-#RUN cd $AP; npm install -g
+RUN git clone git://github.com/n1k0/casperjs.git /opt/casperjs
+RUN ln -sf /opt/casperjs/bin/casperjs /usr/bin/
+RUN mkdir $AP
 
-## set base dir
+ADD ./ $AP
+
 WORKDIR $AP
 
-CMD ["node visual-tester.js"]
-
-## ALIAS
-## visualTester="[ \$(boot2docker status) != running ] && boot2docker up; boot2docker ssh docker run --rm -v \$(pwd):\$(pwd) -w \$(pwd) ssavajols/visual-tester";
+CMD ["nodejs", "visual-tester.js"]
+#CMD ["/bin/bash"]
