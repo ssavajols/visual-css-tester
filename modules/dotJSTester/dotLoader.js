@@ -1,7 +1,14 @@
 var fs = require('fs');
-var modelHelper = require('./modelHelper');
+var modelHelper = require('./modelLoader');
 var dot = require('dot');
 
+/**
+ * [[Description]]
+ * @param   {String}   file     [[Description]]
+ * @param   {String}   model    [[Description]]
+ * @param   {Function} callback [[Description]]
+ * @returns {Boolean}  [[Description]]
+ */
 exports.load = function(file, model, callback){
     
     if( !typeof file === "string" ){

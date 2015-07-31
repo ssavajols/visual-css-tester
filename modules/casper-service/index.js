@@ -12,35 +12,47 @@ var parseArgs = function(args){
 
 var service = function(argsString, callback){
     
+    
     console.log('start casper service with args : ' + argsString.substring(0, 100)+'...');
     
-    childProcess.exec('casperjs casper-services.js ' + argsString, function(err, stdout, stderr){
+    childProcess.exec('casperjs casperjs/casper-services.js ' + argsString, function(err, stdout, stderr){
         if( err){
-            callback({message: err.message}, null);
+            console.log('casper error');
+            callback && callback({message: err.message}, null);
+
         }
-        
-        callback(null, stdout);
+
+        callback && callback(null, stdout);
+
     });
+    
+
 };
 
-exports.dot = function(captureSelector, templateId, templateFile, callback){
+exports.dot = function(captureSelector, templateId, templateFile, layoutPath, scriptName, accessibility, callback){
     var args = [
         captureSelector,
         templateId,
-        templateFile
+        templateFile,
+        layoutPath,
+        scriptName,
+        accessibility
     ];
     
+    
     service(parseArgs(args), callback);
+    
 
 };
 
-exports.page = function(url, captureSelector, id, script, callback){
+exports.page = function(url, captureSelector, id, scriptName, accessibility, callback){
     var args = [
         captureSelector,
         id,
         "{}",
         url,
-        script
+        scriptName,
+        accessibility
     ];
     
     service(parseArgs(args), callback);

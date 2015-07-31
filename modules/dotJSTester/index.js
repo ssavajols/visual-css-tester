@@ -1,2 +1,2 @@
-exports.model = require("./modelHelper");
+exports.model = require("./modelLoader");
 exports.dot = require('./dotLoader');
