@@ -1,5 +1,10 @@
 var fs = require('fs');
 
+/**
+ * [[Description]]
+ * @param   {[[Type]]} file [[Description]]
+ * @returns {[[Type]]} [[Description]]
+ */
 exports.load = function(file){
     var json;
     

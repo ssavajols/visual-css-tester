@@ -56,7 +56,7 @@ module.exports = {
     outputSettings: {
         errorColor: {
             red: 255,
-            green: 255,
+            green: 0,
             blue: 0
         },
         errorType: 'movement',
