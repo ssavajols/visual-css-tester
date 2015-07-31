@@ -1,4 +1,7 @@
 .DS_Store
 .idea/
+phantomcss/failures/
+phantomcss/results/
+phantomcss/screenshots/
 node_modules/
 public/consult

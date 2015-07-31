@@ -1,4 +1,11 @@
 module.exports.pages = [
+    {
+        id: "google",
+        captureSelector: "body",
+        url: "http://www.google.fr",
+        script: "test1.js",
+        accessibility: false
+    }
 // sample page config
 //    {
 //        id: "google",
