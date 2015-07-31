@@ -26,9 +26,12 @@ console.log("=========", pages, dots);
                 captureSelector = page.captureSelector,
                 id = page.id,
                 script = page.script,
-                accessibility = page.accessibility;
-            
-            casperService.page(url, captureSelector, id, script, accessibility, function(err, stdout){
+                accessibility = page.accessibility,
+                cookies = JSON.stringify(page.cookies),
+                viewportWidth  = page.viewport ? page.viewport.width : 1024,
+                viewportHeight = page.viewport ? page.viewport.height : 768;
+
+            casperService.page(url, captureSelector, id, script, accessibility, cookies, viewportWidth, viewportHeight, function(err, stdout){
                 if( err ){
                     console.log(err.message);
                     return;
@@ -62,7 +65,10 @@ console.log("=========", pages, dots);
                 model = dot.model,
                 script = dot.script,
                 layout = dot.layout,
-                accessibility = dot.accessibility;
+                accessibility = dot.accessibility,
+                cookies = dot.cookies,
+                viewportWidth  = dot.viewport ? dot.viewport.width : 1024,
+                viewportHeight = dot.viewport ? dot.viewport.height : 768;
             
             dotJSTester.dot.load(path, model,
                              function(err, content){
@@ -71,7 +77,7 @@ console.log("=========", pages, dots);
                                     return;
                                 }
 
-                                casperService.dot(captureSelector, id, content, layout, script, accessibility, function(err, stdout){
+                                casperService.dot(captureSelector, id, content, layout, script, accessibility, cookies, viewportWidth, viewportHeight, function(err, stdout){
                                     if( err ){
                                         console.log(err.message);
                                         return;
