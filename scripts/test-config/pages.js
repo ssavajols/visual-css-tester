@@ -1,3 +1,7 @@
+/**
+ * pages configuration tests
+ * @type {*[]}
+ */
 module.exports = [
     {
         id: "google",

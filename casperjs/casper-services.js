@@ -58,15 +58,9 @@ if( layoutPath.indexOf('http') === -1 ){
 
     domain = layoutPath.replace(/http(s?):\/\/([a-zA-Z0-9]+\.)/, "").split('/')[0];
 
-    console.log("======>", phantom.addCookie);
-    console.log("======>", domain);
-
-
     // set cookies
     if( cookies && domain ){
         for(var attr in cookies){
-            console.log("test cookies "+ attr +" : " + cookies[attr]);
-            console.log(domain);
             phantom.addCookie({
                 'name': attr,
                 'value': cookies[attr],
@@ -108,17 +102,21 @@ casper = casper.create({
 
 // Inject template to page
 .thenEvaluate(function(templateId, template){
-    
+        //__utils__.echo("=====================\nStarting test\n==================");
+
         var node = document.createElement('div');
         node.id = templateId;
         node.innerHTML = template;
 
-
-        __utils__.echo("COOKIES::::" + document.cookie);
         __utils__.findOne('.DOMInjection').appendChild(node);
-        __utils__.echo("FROM DOM : ");
-        __utils__.echo(__utils__.findOne('html').innerHTML);
-    
+
+        //__utils__.echo("COOKIES INSIDE PAGE :::: \n" + document.cookie);
+        //__utils__.echo("FROM DOM : ");
+
+        //__utils__.echo(__utils__.findOne('html').innerHTML);
+        //__utils__.echo("=====================\nEnding test\n==================");
+
+
 }, templateId, template);
 
 // Test accessibility

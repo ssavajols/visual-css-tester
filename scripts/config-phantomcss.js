@@ -54,11 +54,11 @@ module.exports = {
         Resemble.js
     */
     outputSettings: {
-        errorColor: {
-            red: 255,
-            green: 0,
-            blue: 0
-        },
+        //errorColor: {
+        //    red: 255,
+        //    green: 0,
+        //    blue: 0
+        //},
         errorType: 'movement',
         transparency: 1
     }

@@ -7,8 +7,6 @@ var dotPath = './public/templates/some.dot';
 var pages = require('./scripts/config-dot-tester.js').pages;
 var dots = require('./scripts/config-dot-tester.js').dots;
 
-console.log("=========", pages, dots);
-
 /**
 * Page mode
 */
