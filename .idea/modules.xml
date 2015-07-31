@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/automated-test.iml" filepath="$PROJECT_DIR$/.idea/automated-test.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/visual-css-tester.iml" filepath="$PROJECT_DIR$/.idea/visual-css-tester.iml" />
+>>>>>>> 0c0170272c917fde02c03b1cb937168c447caced
     </modules>
   </component>
 </project>

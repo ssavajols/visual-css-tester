@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ClientPropertiesManager">
     <properties class="javax.swing.AbstractButton">
       <property name="hideActionText" class="java.lang.Boolean" />
@@ -38,6 +39,8 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
+=======
+>>>>>>> 0c0170272c917fde02c03b1cb937168c447caced
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -48,5 +51,11 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/main.js" />
+  </component>
+>>>>>>> 0c0170272c917fde02c03b1cb937168c447caced
   <component name="ProjectRootManager" version="2" />
 </project>
