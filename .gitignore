@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+node-project/
 phantomcss/failures/
 phantomcss/results/
 phantomcss/screenshots/

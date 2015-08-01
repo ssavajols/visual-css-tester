@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "visual_tester": "1.0.0"
+    "visual-tester": "1.0.0"
   }
 }
