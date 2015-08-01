@@ -11,7 +11,7 @@ module.exports = [
         viewport: {
             width: 1024, height:768
         },
-        accessibility: false,
+        accessibility: true,
         cookies: {
             some: "cookie-value",
             other: "other cookie value"

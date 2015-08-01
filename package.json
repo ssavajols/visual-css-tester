@@ -1,18 +1,14 @@
 {
   "name": "automated-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Visual dotJS and Page tester with phantomcss. Also google accessibility tests.",
+  "main": "app.js",
   "scripts": {
-    "start": "node visual-tester.js"
+    "start": "node app.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "phantomjs": ">=1.8.2",
-    "dot": "^1.0.3",
-    "dot-compiler": "0.0.3",
-    "optimist": "^0.6.1",
-    "phantomcss": "^0.10.2"
+    "visual_tester": "1.0.0"
   }
 }

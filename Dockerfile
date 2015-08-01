@@ -13,8 +13,10 @@ RUN apt-get install -y \
             npm=1.3.10~dfsg-1 \
             python=2.7.5-5ubuntu3
 
+
 ## Installation node
 RUN ln -sf /usr/bin/nodejs /usr/bin/node
+
 
 ## Installation phantomJS 1.8.2
 #RUN mkdir $PHANTOM_DIR
@@ -35,11 +37,14 @@ RUN mkdir $AP
 ADD ./ $AP
 WORKDIR $AP
 
+
 ## Install node modules
 RUN npm install
+RUN npm install -g phantomjs@1.8.x
+
 
 ## Désinstaller les applications inutiles
-RUN apt-get -y uninstall \
+RUN apt-get -y remove \
                git \
                npm
 
