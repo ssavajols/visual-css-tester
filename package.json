@@ -1,5 +1,5 @@
 {
-  "name": "automated-test",
+  "name": "sample-project",
   "version": "1.0.0",
   "description": "Visual dotJS and Page tester with phantomcss. Also google accessibility tests.",
   "main": "app.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "visual-tester": "1.0.0"
+    "visual-css-tester": "*"
   }
 }
