@@ -1,11 +1,8 @@
 var childProcess = require('child_process');
 
 var parseArgs = function(args){
-    
-    args.map(function(arg, index, arr){
-        args[index] = encodeURIComponent(arg);
-    });
-    var argsString = "\""+Array.prototype.join.call(args, '" "') + "\"";
+
+    var argsString = " "+Array.prototype.join.call(args, ' ') + " ";
     
     return argsString;
 };
@@ -31,15 +28,15 @@ var service = function(argsString, callback){
 
 exports.dot = function(captureSelector, templateId, templateFile, layoutPath, scriptName, accessibility, cookies,   viewportWidth, viewportHeight, callback){
     var args = [
-        captureSelector,
-        templateId,
-        templateFile,
-        layoutPath,
-        scriptName,
-        accessibility,
-        cookies,
-        viewportWidth,
-        viewportHeight
+        "--captureSelector="+encodeURIComponent(captureSelector),
+        "--templateId="+encodeURIComponent(templateId),
+        "--templateFile="+encodeURIComponent(templateFile),
+        "--layoutPath="+encodeURIComponent(layoutPath),
+        "--scriptName="+encodeURIComponent(scriptName),
+        "--accessibility="+encodeURIComponent(accessibility),
+        "--cookies="+encodeURIComponent(cookies),
+        "--viewportWidth="+encodeURIComponent(viewportWidth),
+        "--viewportHeight="+encodeURIComponent(viewportHeight)
     ];
     
     
@@ -50,15 +47,15 @@ exports.dot = function(captureSelector, templateId, templateFile, layoutPath, sc
 
 exports.page = function(url, captureSelector, id, scriptName, accessibility, cookies, viewportWidth, viewportHeight, callback){
     var args = [
-        captureSelector,
-        id,
-        "{}",
-        url,
-        scriptName,
-        accessibility,
-        cookies,
-        viewportWidth,
-        viewportHeight
+        "--captureSelector="+encodeURIComponent(captureSelector),
+        "--templateId="+encodeURIComponent(id),
+        "--templateFile="+encodeURIComponent("{}"),
+        "--layoutPath="+encodeURIComponent(url),
+        "--scriptName="+encodeURIComponent(scriptName),
+        "--accessibility="+encodeURIComponent(accessibility),
+        "--cookies="+encodeURIComponent(cookies),
+        "--viewportWidth="+encodeURIComponent(viewportWidth),
+        "--viewportHeight="+encodeURIComponent(viewportHeight)
     ];
     
     service(parseArgs(args), callback);

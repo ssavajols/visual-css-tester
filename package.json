@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "phantomjs": ">=1.8.2",
     "dot": "^1.0.3",
     "dot-compiler": "0.0.3",
     "optimist": "^0.6.1",

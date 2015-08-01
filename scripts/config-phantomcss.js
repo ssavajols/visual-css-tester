@@ -6,7 +6,7 @@ module.exports = {
         phantomcss folder (not lib or node_modules). If you are using 
         NPM, this will be './node_modules/phantomcss'.
     */
-    libraryRoot: './node_modules/Phantomcss',
+    libraryRoot: './node_modules/phantomcss',
 
     screenshotRoot: './phantomcss/screenshots',
 

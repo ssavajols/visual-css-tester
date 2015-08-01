@@ -1,5 +1,6 @@
 var casper = require('casper');
-var phantomcss = require( './node_modules/phantomcss/phantomcss.js');
+var args = require('casper').create();
+var phantomcss = require('./node_modules/phantomcss/phantomcss.js');
 var phantomcssConfig = require('./scripts/config-phantomcss');
 var sys = require('system');
 
@@ -7,15 +8,16 @@ var domain;
 var viewportWidth, viewportHeight;
 var url, capture, template, templateId, layout, scriptName, accessibility, cookies;
 
-capture        = decodeURIComponent(sys.args[4]);  // selector to use for capture
-templateId     = decodeURIComponent(sys.args[5]);  // template id
-template       = decodeURIComponent(sys.args[6]);  // template to use (.dot)
-layoutPath     = decodeURIComponent(sys.args[7]);  // layoutPath or url to test
-scriptName     = decodeURIComponent(sys.args[8]);  // script to use
-accessibility  = decodeURIComponent(sys.args[9]);  // test accessibility and export report
-cookies        = decodeURIComponent(sys.args[10]);  // cookies
-viewportWidth  = decodeURIComponent(sys.args[11]);  // ViewportWidth
-viewportHeight = decodeURIComponent(sys.args[12]);  // ViewportHeight
+
+capture        = decodeURIComponent(args.cli.get("captureSelector"));  // selector to use for capture
+templateId     = decodeURIComponent(args.cli.get("templateId"));  // template id
+template       = decodeURIComponent(args.cli.get("templateFile"));  // template to use (.dot)
+layoutPath     = decodeURIComponent(args.cli.get("layoutPath"));  // layoutPath or url to test
+scriptName     = decodeURIComponent(args.cli.get("scriptName"));  // script to use
+accessibility  = decodeURIComponent(args.cli.get("accessibility"));  // test accessibility and export report
+cookies        = decodeURIComponent(args.cli.get("cookies"));  // cookies
+viewportWidth  = decodeURIComponent(args.cli.get("viewportWidth"));  // ViewportWidth
+viewportHeight = decodeURIComponent(args.cli.get("viewportHeight"));  // ViewportHeight
 
 
 // Default viewport sizes
@@ -136,7 +138,7 @@ if( accessibility === "true" ){
 // execute test
 casper.then(function(){   
     scriptTest(
-        casper, 
+        casper,
         phantomcss, {
             scriptName: scriptName,
             capture: capture,
@@ -153,13 +155,12 @@ casper.then(function(){
 
 // Compare screenshots 
 .then(function(){
-    phantomcss.compareAll(); 
+    phantomcss.compareAll();
 })
 
 // End of test
 .run(function(){
-    casper.test.done();
-    
+
     casper.echo(Array(30).join('='));
     casper.echo("test ended : " + templateId);
     casper.echo(Array(30).join('='));
